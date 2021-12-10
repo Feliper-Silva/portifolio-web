@@ -8,25 +8,11 @@ function Skills() {
           <h2 className="title">Especialidades</h2>
           <div className="skills-content">
             <div className="column left">
-              <div className="text">Minhas habilidades</div>
-              <p>
-                Lorem Ipsum é simplesmente uma simulação de texto da indústria
-                tipográfica e de impressos, e vem sendo utilizado desde o século
-                XVI, quando um impressor desconhecido pegou uma bandeja de tipos
-                e os embaralhou para fazer um livro de modelos de tipos. Lorem
-                Ipsum sobreviveu não só a cinco séculos, como também ao salto
-                para a editoração eletrônica, permanecendo essencialmente
-                inalterado. Se popularizou na década de 60, quando a Letraset
-                lançou decalques contendo passagens de Lorem Ipsum, e mais
-                recentemente quando passou a ser integrado a softwares de
-                editoração eletrônica como Aldus PageMaker.
-              </p>
-            </div>
-            <div className="column right">
+              <div className="text">Front-End</div>
               <div className="bars">
                 <div className="info">
                   <span>HTML5</span>
-                  <span>93%</span>
+                  <span>75%</span>
                 </div>
                 <div className="line html"></div>
               </div>
@@ -40,7 +26,7 @@ function Skills() {
               <div className="bars">
                 <div className="info">
                   <span>JavaScript</span>
-                  <span>73%</span>
+                  <span>75%</span>
                 </div>
                 <div className="line javascript"></div>
               </div>
@@ -51,12 +37,55 @@ function Skills() {
                 </div>
                 <div className="line react"></div>
               </div>
+            </div>
+
+            <div className="column center">
+              <div className="text">Soft Skills</div>
+              <div className="bars">
+                <div className="info">
+                  <span>Comunicação</span>
+                  <span>75%</span>
+                </div>
+                <div className="line comunication"></div>
+              </div>
+              <div className="bars">
+                <div className="info">
+                  <span>Criatividade</span>
+                  <span>65%</span>
+                </div>
+                <div className="line creativity"></div>
+              </div>
+              <div className="bars">
+                <div className="info">
+                  <span>Colaboração</span>
+                  <span>73%</span>
+                </div>
+                <div className="line collaboration"></div>
+              </div>
+              <div className="bars">
+                <div className="info">
+                  <span>Empatia</span>
+                  <span>85%</span>
+                </div>
+                <div className="line empathy"></div>
+              </div>
+            </div>
+            <div className="column right">
+              <div className="text">Back-End</div>
+
               <div className="bars">
                 <div className="info">
                   <span>NodeJs</span>
                   <span>75%</span>
                 </div>
                 <div className="line nodejs"></div>
+              </div>
+              <div className="bars">
+                <div className="info">
+                  <span>Express</span>
+                  <span>53%</span>
+                </div>
+                <div className="line express"></div>
               </div>
               <div className="bars">
                 <div className="info">
