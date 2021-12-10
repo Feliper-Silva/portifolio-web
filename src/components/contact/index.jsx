@@ -1,6 +1,15 @@
 import React from 'react';
+import swal from 'sweetalert';
 
 function Contact() {
+  function clickAlert() {
+    swal({
+      title: 'Enviado com sucesso',
+      text: 'Entrarei em contato em breve!',
+      icon: 'sucess',
+      button: 'Aceptar'
+    });
+  }
   return (
     <>
       <section className="contact" id="contact">
@@ -54,6 +63,11 @@ function Contact() {
                 <div className="fields">
                   <div className="field name">
                     <input
+                      type="hidden"
+                      name="_next"
+                      value="https://portifolio-felipe-silva.vercel.app/#contact"
+                    />
+                    <input
                       type="text"
                       name="Nome"
                       id="Nome"
@@ -91,7 +105,9 @@ function Contact() {
                     ></textarea>
                   </div>
                   <div className="button">
-                    <button type="submit">Enviar</button>
+                    <button type="submit" onClick={clickAlert}>
+                      Enviar
+                    </button>
                   </div>
                 </div>
               </form>

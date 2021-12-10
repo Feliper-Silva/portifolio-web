@@ -18,7 +18,7 @@ function About() {
                 com as tecnologias Web é gostei muito, atualmente só prático em
                 projetos pessoais.
               </p>
-              <a href="/public/curriculo/Curriculo-FelipeSilva.pdf" download>
+              <a download href="/curriculo/Curriculo-FelipeSilva.pdf">
                 Download Cv
               </a>
             </div>

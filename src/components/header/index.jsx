@@ -1,10 +1,16 @@
 import React, { useState } from 'react';
 
+class Handle extends React.Component {
+  state = { clicked: false };
+  handleClick() {
+    this.setState({ clicked: !this.state.clicked });
+  }
+}
+
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
-  const [clickBtn, setClickBtn] = useState(false);
   const [up, setUp] = useState(false);
-  const [clickUp, setClickUp] = useState(0);
+
   const changeBackgroud = () => {
     if (window.scrollY > 20) {
       setNavbar(true);
@@ -23,9 +29,7 @@ function Navbar() {
     <>
       <div
         className={up ? 'scroll-up-btn show' : 'scroll-up-btn'}
-        onClick={() =>
-          setClickUp(clickUp + window.AnimationEffect({ scrollTop: 0 }))
-        }
+        onClick={this.Handle.handleClick}
       >
         <ion-icon name="chevron-up-outline"></ion-icon>
       </div>
@@ -53,12 +57,7 @@ function Navbar() {
               <a href="#contact">Contato</a>
             </li>
           </ul>
-          <div
-            className="menu-btn"
-            onClick={() =>
-              setClickBtn(clickBtn ? 'menu-btn active' : 'menu-btn')
-            }
-          >
+          <div className="menu-btn">
             <ion-icon name="menu-outline"></ion-icon>
           </div>
         </div>
