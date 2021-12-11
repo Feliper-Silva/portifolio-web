@@ -1,12 +1,5 @@
 import React, { useState } from 'react';
 
-class Handle extends React.Component {
-  state = { clicked: false };
-  handleClick() {
-    this.setState({ clicked: !this.state.clicked });
-  }
-}
-
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
   const [up, setUp] = useState(false);
@@ -27,10 +20,7 @@ function Navbar() {
   window.addEventListener('scroll', changeBackgroud);
   return (
     <>
-      <div
-        className={up ? 'scroll-up-btn show' : 'scroll-up-btn'}
-        onClick={this.Handle.handleClick}
-      >
+      <div className={up ? 'scroll-up-btn show' : 'scroll-up-btn'}>
         <ion-icon name="chevron-up-outline"></ion-icon>
       </div>
       <nav className={navbar ? 'navbar sticky' : 'navbar'}>

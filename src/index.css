@@ -383,24 +383,18 @@ footer {
   padding: 5px;
   transform: translate(-50%);
 }
-.projects .carousel .card {
+.projects .card {
   background: #222;
   border-radius: 1px;
   padding: 25px 35px;
 }
-.projects .carousel .card video {
+.projects .card video {
   width: 450px;
   height: 250px;
-  object-fit: cover;
   border: 5px solid #00804b;
 }
-.projects .carousel .card .box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 
+/*https://api.vercel.com/now/files/prj_yOapuUW8JC4rzeCsrFrxFRofah2A/9cba4bae7c976abc08bdaf7e2f336ccafa26fbb0657016f6781cfdd9184e8ab5/Curriculo-FelipeSilva.pdf*/
 .contact .title::before {
   content: '';
   position: absolute;
