@@ -87,25 +87,7 @@ html {
   color: #00804b;
   font-weight: 500;
 }
-.home .home-content .text-3 span {
-  animation-name: rotate;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-@keyframes text {
-  0% {
-    width: 0%;
-  }
 
-  50% {
-    width: 100%;
-  }
-
-  100% {
-    width: 1%;
-  }
-}
 .home .home-content a {
   display: inline-block;
   background: #00804b;
@@ -383,18 +365,72 @@ footer {
   padding: 5px;
   transform: translate(-50%);
 }
-.projects .card {
-  background: #222;
-  border-radius: 1px;
-  padding: 25px 35px;
-}
-.projects .card video {
-  width: 450px;
-  height: 250px;
-  border: 5px solid #00804b;
+
+.slide-container {
+  position: relative;
+  overflow: hidden;
 }
 
-/*https://api.vercel.com/now/files/prj_yOapuUW8JC4rzeCsrFrxFRofah2A/9cba4bae7c976abc08bdaf7e2f336ccafa26fbb0657016f6781cfdd9184e8ab5/Curriculo-FelipeSilva.pdf*/
+.slide-container .sliderShow {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.slide-container .slider {
+  min-width: 100%;
+  overflow: hidden;
+  transition: 0.3s ease all;
+  z-index: 10;
+  max-height: 350px;
+  position: relative;
+}
+.slide-container .slider video {
+  width: 100%;
+  vertical-align: top;
+}
+.slide-container .text-slider {
+  background: #000;
+  color: #fff;
+  width: 100%;
+  padding: 2px 60px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+.controllers {
+  position: absolute;
+  top: 0;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.controllers .button {
+  pointer-events: all;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  width: 50px;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  transition: 0.3s ease all;
+}
+.controllers .button {
+  filter: drop-shadow(-2px 0 0 #fff);
+}
+.controllers .button {
+  fill: #fff;
+}
+
+.controllers .right {
+  right: 0;
+}
+
+.controllers button ion-icon {
+  font-size: 50px;
+}
+
 .contact .title::before {
   content: '';
   position: absolute;
