@@ -1,9 +1,16 @@
 import React, { useState } from 'react';
+import { animateScroll as scroll } from 'react-scroll';
 
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
   const [up, setUp] = useState(false);
 
+  const ClickBtn = () => {
+    const navMenu = document.querySelector('.navbar .menu');
+    const menu = document.querySelector('.menu-btn');
+    navMenu.classList.toggle('active');
+    menu.classList.toggle('active');
+  };
   const changeBackgroud = () => {
     if (window.scrollY > 20) {
       setNavbar(true);
@@ -20,7 +27,10 @@ function Navbar() {
   window.addEventListener('scroll', changeBackgroud);
   return (
     <>
-      <div className={up ? 'scroll-up-btn show' : 'scroll-up-btn'}>
+      <div
+        className={up ? 'scroll-up-btn show' : 'scroll-up-btn'}
+        onClick={() => scroll.scrollToTop()}
+      >
         <ion-icon name="chevron-up-outline"></ion-icon>
       </div>
       <nav className={navbar ? 'navbar sticky' : 'navbar'}>
@@ -48,7 +58,7 @@ function Navbar() {
             </li>
           </ul>
           <div className="menu-btn">
-            <ion-icon name="menu-outline"></ion-icon>
+            <ion-icon name="menu-outline" onClick={ClickBtn}></ion-icon>
           </div>
         </div>
       </nav>
