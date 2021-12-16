@@ -1,11 +1,11 @@
 import React from 'react';
-import About from './components/about/index.jsx';
-import Navbar from './components/header/index.jsx';
-import Home from './components/main/index.jsx';
-import Skills from './components/skills/index.jsx';
-import Projects from './components/projects/index.jsx';
-import Contact from './components/contact/index.jsx';
-import Footer from './components/footer/index.jsx';
+import About from './components/About/index.jsx';
+import Navbar from './components/Header/index.jsx';
+import Home from './components/Home/index.jsx';
+import Skills from './components/Skills/index.jsx';
+import Projects from './components/Projects/index.jsx';
+import Contact from './components/Contact/index.jsx';
+import Footer from './components/Footer/index.jsx';
 
 const App = () => {
   return (
