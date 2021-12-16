@@ -66,7 +66,7 @@ function Projects() {
                 <div className="text">
                   To-Do-List
                   <div className="tags">
-                    <div className="tag">ReacJS</div>
+                    <div className="tag">ReactJS</div>
                     <div className="tag">JavaScript</div>
                   </div>
                 </div>
