@@ -1,4 +1,5 @@
 import React from 'react';
+import './index.css';
 
 function About() {
   return (
@@ -13,10 +14,10 @@ function About() {
             <div className="text">
               Sou Felipe e sou <span>Desenvolvedor Web</span>
               <p>
-                Formado como técnico em desenvolvimento de sistemas. Atuando a
-                mais de 1 ano como Desenvolvedor Web, conhecimentos atuais em
-                Back-end. Mas estou me especializando para ser um Desenvolvedor
-                Full stack.
+                Formado como Técnico em Desenvolvimento de Sistemas. Atuando 2
+                anos como Desenvolvedor Web, conhecimentos atuais em Back-end.
+                Mas estou me especializando para ser um Desenvolvedor Full
+                stack.
               </p>
               <a download href="/curriculo/Curriculo-FelipeSilva.pdf">
                 Download Cv

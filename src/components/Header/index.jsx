@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 
+import './index.css';
+
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
   const [up, setUp] = useState(false);
@@ -51,7 +53,7 @@ function Navbar() {
               <a href="#skills">Especialidades</a>
             </li>
             <li>
-              <a href="#projects">Projetos</a>
+              <a href="#project">Projetos</a>
             </li>
             <li>
               <a href="#contact">Contato</a>
