@@ -12,12 +12,11 @@ function About() {
           </div>
           <div className="column right">
             <div className="text">
-              Sou Felipe e sou <span>Desenvolvedor Web</span>
               <p>
-                Formado como Técnico em Desenvolvimento de Sistemas. Atuando 2
-                anos como Desenvolvedor Web, conhecimentos atuais em Back-end.
-                Mas estou me especializando para ser um Desenvolvedor Full
-                stack.
+                Formado em Técnico em Desenvolvimento de Sistemas, atuo há 2
+                anos como Desenvolvedor Web. Possuo conhecimento atual em
+                Back-end e estou me especializando para ser Desenvolvedor Full
+                Stack.
               </p>
               <a download href="/curriculo/Curriculo-FelipeSilva.pdf">
                 Download Cv

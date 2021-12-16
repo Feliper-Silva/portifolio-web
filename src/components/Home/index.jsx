@@ -10,7 +10,7 @@ function Home() {
             <div className="text-1">Olá, meu nome é</div>
             <div className="text-2">Felipe Silva</div>
             <div className="text-3">
-              eu sou <span>Desenvolvedor Web</span>
+              Sou <span>Desenvolvedor Web</span>
             </div>
             <a
               href="https://www.linkedin.com/in/feliper-silva/"
