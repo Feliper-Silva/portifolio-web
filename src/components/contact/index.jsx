@@ -19,8 +19,8 @@ function Contact() {
             <div className="column left">
               <div className="text">Fale Comigo</div>
               <p>
-                Resta alguma dúvida? Preencha os campos ao lado com os seguintes
-                dados que em breve entrarei em contato.
+                Vamos realizar um projeto junto, bora? Preencha os campos ao
+                lado com os seguintes dados que em breve entrarei em contato.
               </p>
               <div className="icons">
                 <div className="row">

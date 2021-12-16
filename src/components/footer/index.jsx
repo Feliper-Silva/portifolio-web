@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer>
       <span>
-        © Copyright 2021
+        © 2021
         <a
           href="https://www.linkedin.com/in/feliper-silva/"
           target="_blank"
