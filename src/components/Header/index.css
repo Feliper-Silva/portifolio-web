@@ -23,6 +23,7 @@
   color: #00804b;
   transition: all 0.3s ease;
 }
+
 .navbar.sticky a span {
   color: #fff;
 }
