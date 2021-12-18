@@ -97,3 +97,20 @@
     font-size: 27px;
   }
 }
+@media (max-width: 436px) {
+  .home .max-width {
+    margin: auto 0 auto 0;
+  }
+  .skills .title {
+    margin-left: -18px;
+  }
+  .about .title::after {
+    bottom: -34px;
+  }
+  .project .project-content .card .text .tags {
+    width: calc(30%-10px);
+  }
+  .contact .title::after {
+    bottom: -34px;
+  }
+}

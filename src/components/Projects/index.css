@@ -9,7 +9,8 @@
   padding: 3px 3px;
   cursor: pointer;
 }
-.project .project-content .card:hover {
+.project .project-content .box:hover {
+  border-radius: 8px;
   background: #00804b;
 }
 .project .project-content .card .box {
@@ -27,11 +28,13 @@
   font-weight: 900;
   font-size: 18px;
 }
+
 .project .project-content .card .text .tag {
-  margin-right: 5px;
-  padding: 5px 10px;
-  border-radius: 20px;
-  font-size: 12px;
+  margin: 2px;
+  padding: 6px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 15px;
   background: #556ae2;
   color: #fff;
   display: inline-block;
