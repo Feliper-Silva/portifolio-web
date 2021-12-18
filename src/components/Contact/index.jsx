@@ -12,7 +12,7 @@ function Contact() {
             <div className="column left">
               <div className="text">Fale Comigo</div>
               <p>
-                Que tal realizamos projetos juntos, vamos? <br />
+                Que tal realizarmos projetos juntos, vamos? <br />
                 Preencha o formulário com os seus dados que em breve entrarei em
                 contato.
               </p>
