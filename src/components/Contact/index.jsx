@@ -12,7 +12,7 @@ function Contact() {
             <div className="column left">
               <div className="text">Fale Comigo</div>
               <p>
-                Que tal realizamos projetos juntos, vamos? <br />
+                Que tal realizarmos projetos juntos, vamos? <br />
                 Preencha o formulário com os seus dados que em breve entrarei em
                 contato.
               </p>
@@ -25,20 +25,23 @@ function Contact() {
                   </div>
                 </div>
                 <div className="row">
-                  <ion-icon name="earth-outline"></ion-icon>
-
-                  <div className="info">
-                    <div className="head">Endereço: </div>
-                    <div className="sub-title">Brasília, DF</div>
-                  </div>
-                </div>
-                <div className="row">
-                  <ion-icon name="mail-outline"></ion-icon>
+                  <ion-icon
+                    name="mail-unread-outline"
+                    className="email"
+                  ></ion-icon>
                   <div className="info">
                     <div className="head">E-Mail</div>
                     <div className="sub-title">felipe726silva@gmail.com</div>
                   </div>
                 </div>
+                <div className="row">
+                  <ion-icon name="earth-outline"></ion-icon>
+                  <div className="info">
+                    <div className="head">Endereço: </div>
+                    <div className="sub-title">Brasília, DF</div>
+                  </div>
+                </div>
+
                 <div className="row">
                   <ion-icon name="logo-whatsapp"></ion-icon>
                   <div className="info">

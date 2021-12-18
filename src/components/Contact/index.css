@@ -23,6 +23,10 @@
   height: 65px;
   align-items: center;
 }
+.contact .contact-content .row ion-icon {
+  font-size: 25px;
+  color: #00804b;
+}
 .contact .contact-content .row .info {
   margin-left: 30px;
 }
@@ -31,10 +35,6 @@
 }
 .contact .contact-content .row .info .sub-title {
   color: #333;
-}
-.contact .contact-content .row ion-icon {
-  font-size: 25px;
-  color: #00804b;
 }
 .contact .right form .fields {
   display: flex;
