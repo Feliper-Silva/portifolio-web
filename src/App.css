@@ -107,9 +107,6 @@
   .about .title::after {
     bottom: -34px;
   }
-  .project .project-content .card .text .tags {
-    width: calc(30%-10px);
-  }
   .contact .title::after {
     bottom: -34px;
   }
