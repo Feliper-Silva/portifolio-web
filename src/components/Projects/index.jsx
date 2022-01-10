@@ -28,6 +28,13 @@ function Projects() {
                   </div>
                 </div>
               </a>
+              <details>
+                <summary>Descrição</summary>
+                <p>
+                  Realizado no curso técnico em dupla, primeiro jogo realizado
+                  com jquery.
+                </p>
+              </details>
             </div>
           </div>
           <div className="card">
@@ -42,7 +49,7 @@ function Projects() {
                   alt="site NORMALIZA - 2º EDIÇÃO"
                 />
                 <div className="text">
-                  NORMALIZA
+                  NORMALIZA IFB
                   <div className="tags">
                     <div className="tag">HTML5</div>
                     <div className="tag">CSS3</div>
@@ -50,6 +57,13 @@ function Projects() {
                   </div>
                 </div>
               </a>
+              <details>
+                <summary>Descrição</summary>
+                <p>
+                  Participação no Normaliza IFB, responsavel pela inserção de
+                  contéudo e implementações na página web.
+                </p>
+              </details>
             </div>
           </div>
           <div className="card">
@@ -71,6 +85,42 @@ function Projects() {
                   </div>
                 </div>
               </a>
+              <details>
+                <summary>Descrição</summary>
+                <p>
+                  Lista de tarefas em react, que está consumindo uma API que
+                  insere alguns dados fixo.
+                </p>
+              </details>
+            </div>
+          </div>
+          <div className="card">
+            <div className="box">
+              <a
+                href="https://github.com/Feliper-Silva/to-do-list-express"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="/img/todolist1.png"
+                  alt="Aplicação Web de Lista de tarefas"
+                />
+                <div className="text">
+                  Lista de Tarefa
+                  <div className="tags">
+                    <div className="tag">EJS</div>
+                    <div className="tag">Bulma Css3</div>
+                    <div className="tag">NodeJS</div>
+                    <div className="tag">Express</div>
+                  </div>
+                </div>
+              </a>
+              <details>
+                <summary>Descrição</summary>
+                <p>
+                  App com front e back-end dinâmicos, com banco não relacional.
+                </p>
+              </details>
             </div>
           </div>
         </div>
