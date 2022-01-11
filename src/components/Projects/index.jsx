@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './index.css';
 
 function Projects() {
@@ -60,7 +61,7 @@ function Projects() {
               <details>
                 <summary>Descrição</summary>
                 <p>
-                  Participação no Normaliza IFB, responsavel pela inserção de
+                  Participação no Normaliza IFB, responsável pela inserção de
                   contéudo e implementações na página web.
                 </p>
               </details>
