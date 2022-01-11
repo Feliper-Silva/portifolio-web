@@ -59,17 +59,13 @@ function Contact() {
               >
                 <div className="fields">
                   <div className="field name">
-                    <input
-                      type="hidden"
-                      name="_next"
-                      value={'https://portifolio-felipe-silva.vercel.app/#home'}
-                    />
+                    <input type="hidden" name="_next" value="formsucess.js" />
                     <input
                       type="text"
                       name="Nome"
                       id="Nome"
                       placeholder="Nome"
-                      require
+                      require="true"
                     />
                   </div>
                   <div className="field email">
@@ -78,7 +74,7 @@ function Contact() {
                       name="E-mail"
                       id="E-mail"
                       placeholder="E-Mail"
-                      require
+                      require="true"
                     />
                   </div>
                 </div>
@@ -89,7 +85,7 @@ function Contact() {
                       name="Sobrenome"
                       id="Sobrenome"
                       placeholder="Sobrenome"
-                      require
+                      require="true"
                     />
                   </div>
                   <div className="field textarea">
