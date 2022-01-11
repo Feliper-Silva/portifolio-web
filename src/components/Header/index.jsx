@@ -55,9 +55,6 @@ function Navbar() {
             <li>
               <a href="#project">Projetos</a>
             </li>
-            <li>
-              <a href="#contact">Contato</a>
-            </li>
           </ul>
           <div className="menu-btn">
             <ion-icon name="menu-outline" onClick={ClickBtn}></ion-icon>
