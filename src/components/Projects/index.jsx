@@ -31,10 +31,7 @@ function Projects() {
               </a>
               <details>
                 <summary>Descrição</summary>
-                <p>
-                  Realizado no curso técnico em dupla, primeiro jogo realizado
-                  com jquery.
-                </p>
+                <p>Jogo de Questões de multiplicação, realizado com Jquery.</p>
               </details>
             </div>
           </div>
@@ -122,6 +119,39 @@ function Projects() {
                   App com front e back-end dinâmicos, com banco não relacional.
                 </p>
               </details>
+            </div>
+          </div>
+          <div className="card">
+            <div className="box">
+              <a
+                href="https://restaurant-pizza-feliper-silva.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="/img/ecommercePizza.png"
+                  alt="Aplicação Web de e-commerce pizza Restaurant"
+                />
+                <div className="text">
+                  Pizza Restaurant e-commerce
+                  <div className="tags">
+                    <div className="tag">ReactJs</div>
+                    <div className="tag">Styled-components</div>
+                  </div>
+                </div>
+              </a>
+              <details>
+                <summary>Descrição</summary>
+                <p>Web site em ReactJs com a biblioteca styled-components.</p>
+              </details>
+            </div>
+          </div>
+          <div className="card">
+            <div className="box">
+              <a rel="noreferrer">
+                <img src="/img/EmBreve.png" alt="imagem com o nome Em Breve" />
+                <div className="text">Em Breve</div>
+              </a>
             </div>
           </div>
         </div>
