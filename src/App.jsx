@@ -6,6 +6,7 @@ import Skills from './components/Skills/index.jsx';
 import Projects from './components/Projects/index.jsx';
 import Footer from './components/Footer/index.jsx';
 import './App.css';
+import { projects } from './components/dataProjects/index.js';
 
 const App = () => {
   return (
@@ -14,7 +15,7 @@ const App = () => {
       <Home />
       <About />
       <Skills />
-      <Projects />
+      <Projects data={projects} />
       <Footer />
     </>
   );
