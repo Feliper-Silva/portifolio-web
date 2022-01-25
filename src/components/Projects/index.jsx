@@ -1,162 +1,60 @@
 import React from 'react';
 
-import './index.css';
-
-function Projects() {
+import {
+  Section,
+  ProjectContainer,
+  ProjectHeading,
+  ProjectWrapper,
+  ProjectCard,
+  ProjectImg,
+  TitleContent,
+  ProjectTitle,
+  ProjectDesc,
+  LinksExternal,
+  UtilityList,
+  Hr,
+  TagList,
+  Tag
+} from './stylesProject';
+import { VscGithubInverted } from 'react-icons/vsc';
+import { CgWebsite } from 'react-icons/cg';
+function Projects({ data }) {
   return (
-    <section className="project" id="project">
-      <div className="max-width">
-        <h2 className="title">Projetos</h2>
-        <div className="project-content">
-          <div className="card">
-            <div className="box">
-              <a
-                href="https://math-quiz-chi.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src="/img/math-quiz.png"
-                  alt="Jogo de questões matemáticas"
-                />
-                <div className="text">
-                  Math Quiz
-                  <div className="tags">
-                    <div className="tag">HTML5</div>
-                    <div className="tag">CSS3</div>
-                    <div className="tag">JavaScript</div>
-                    <div className="tag">JQuery</div>
-                  </div>
+    <Section>
+      <ProjectContainer>
+        <ProjectHeading className="title">Projetos</ProjectHeading>
+        <ProjectWrapper>
+          {data.map((project, index) => {
+            return (
+              <ProjectCard key={index}>
+                <ProjectImg src={project.image} alt={project.alt} />
+                <TitleContent>
+                  <ProjectTitle>{project.title}</ProjectTitle>
+                  <Hr />
+                </TitleContent>
+                <ProjectDesc>{project.description}</ProjectDesc>
+                <div>
+                  <TitleContent>Stack</TitleContent>
+                  <TagList>
+                    {project.tags.map((t, i) => {
+                      return <Tag key={i}>{t}</Tag>;
+                    })}
+                  </TagList>
                 </div>
-              </a>
-              <details>
-                <summary>Descrição</summary>
-                <p>Jogo de Questões de multiplicação, realizado com Jquery.</p>
-              </details>
-            </div>
-          </div>
-          <div className="card">
-            <div className="box">
-              <a
-                href="https://normaliza.ifb.edu.br/doku.php"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src="/img/NORMALIZA.png"
-                  alt="site NORMALIZA - 2º EDIÇÃO"
-                />
-                <div className="text">
-                  NORMALIZA IFB
-                  <div className="tags">
-                    <div className="tag">HTML5</div>
-                    <div className="tag">CSS3</div>
-                    <div className="tag">DOKUWIKI</div>
-                  </div>
-                </div>
-              </a>
-              <details>
-                <summary>Descrição</summary>
-                <p>
-                  Participação no Normaliza IFB, responsável pela inserção de
-                  contéudo e implementações na página web.
-                </p>
-              </details>
-            </div>
-          </div>
-          <div className="card">
-            <div className="box">
-              <a
-                href="https://to-do-list-six-kohl.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src="/img/to-do-list.png"
-                  alt="Aplicação Web de Lista de tarefas"
-                />
-                <div className="text">
-                  To-Do-List
-                  <div className="tags">
-                    <div className="tag">ReactJS</div>
-                    <div className="tag">JavaScript</div>
-                  </div>
-                </div>
-              </a>
-              <details>
-                <summary>Descrição</summary>
-                <p>
-                  Lista de tarefas em react, que está consumindo uma API que
-                  insere alguns dados fixo.
-                </p>
-              </details>
-            </div>
-          </div>
-          <div className="card">
-            <div className="box">
-              <a
-                href="https://github.com/Feliper-Silva/to-do-list-express"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src="/img/todolist1.png"
-                  alt="Aplicação Web de Lista de tarefas"
-                />
-                <div className="text">
-                  Lista de Tarefa
-                  <div className="tags">
-                    <div className="tag">EJS</div>
-                    <div className="tag">Bulma Css3</div>
-                    <div className="tag">NodeJS</div>
-                    <div className="tag">Express</div>
-                  </div>
-                </div>
-              </a>
-              <details>
-                <summary>Descrição</summary>
-                <p>
-                  App com front e back-end dinâmicos, com banco não relacional.
-                </p>
-              </details>
-            </div>
-          </div>
-          <div className="card">
-            <div className="box">
-              <a
-                href="https://restaurant-pizza-feliper-silva.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src="/img/ecommercePizza.png"
-                  alt="Aplicação Web de e-commerce pizza Restaurant"
-                />
-                <div className="text">
-                  Pizza Restaurant e-commerce
-                  <div className="tags">
-                    <div className="tag">ReactJs</div>
-                    <div className="tag">Styled-components</div>
-                  </div>
-                </div>
-              </a>
-              <details>
-                <summary>Descrição</summary>
-                <p>Web site em ReactJs com a biblioteca styled-components.</p>
-              </details>
-            </div>
-          </div>
-          <div className="card">
-            <div className="box">
-              <a rel="noreferrer">
-                <img src="/img/EmBreve.png" alt="imagem com o nome Em Breve" />
-                <div className="text">Em Breve</div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+                <UtilityList>
+                  <LinksExternal href={project.visit} target="_blank">
+                    <CgWebsite />
+                  </LinksExternal>
+                  <LinksExternal href={project.source} target="_blank">
+                    <VscGithubInverted />
+                  </LinksExternal>
+                </UtilityList>
+              </ProjectCard>
+            );
+          })}
+        </ProjectWrapper>
+      </ProjectContainer>
+    </Section>
   );
 }
 
