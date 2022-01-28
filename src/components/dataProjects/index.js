@@ -1,5 +1,14 @@
 export const projects = [
   {
+    title: 'Clone Evernote',
+    description:
+      'Aplicação web de criação de notas com validação de usuario com MongoDB',
+    image: '/img/clone-evernote.png',
+    tags: ['React', 'Node', 'MongoDB'],
+    source: 'https://github.com/Feliper-Silva/javascript_note_api',
+    visit: 'https://github.com/Feliper-Silva/client_evernote_clone'
+  },
+  {
     title: 'E-Commerce Restaurant Pizza',
     description: 'E-commerce de uma pizzaria.',
     image: '/img/ecommercePizza.png',
