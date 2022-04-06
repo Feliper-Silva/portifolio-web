@@ -1,11 +1,11 @@
-import React from 'react';
-import './index.css';
+import React from "react";
+import "./index.css";
 
 function Footer() {
   return (
     <footer>
       <span>
-        © 2021
+        © 2022
         <a
           href="https://www.linkedin.com/in/feliper-silva/"
           target="_blank"

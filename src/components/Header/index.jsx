@@ -28,7 +28,7 @@ function Navbar() {
 
   window.addEventListener("scroll", changeBackground);
   return (
-    <>
+    <header>
       <div
         className={up ? "scroll-up-btn show" : "scroll-up-btn"}
         onClick={() => scroll.scrollToTop()}
@@ -52,13 +52,16 @@ function Navbar() {
             <li>
               <a href="#skills">Especialidades</a>
             </li>
+            <li>
+              <a href="#projects"> Projetos</a>
+            </li>
           </ul>
           <div className="menu-btn">
             <ion-icon name="menu-outline" onClick={ClickBtn}></ion-icon>
           </div>
         </div>
       </nav>
-    </>
+    </header>
   );
 }
 
