@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 import {
   Section,
@@ -15,12 +15,12 @@ import {
   Hr,
   TagList,
   Tag
-} from './stylesProject';
-import { VscGithubInverted } from 'react-icons/vsc';
-import { CgWebsite } from 'react-icons/cg';
+} from "./stylesProject";
+import { VscGithubInverted } from "react-icons/vsc";
+import { CgWebsite } from "react-icons/cg";
 function Projects({ data }) {
   return (
-    <Section>
+    <Section id="projects">
       <ProjectContainer>
         <ProjectHeading className="title">Projetos</ProjectHeading>
         <ProjectWrapper>
