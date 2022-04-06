@@ -8,7 +8,7 @@
   background: #fff;
 }
 .skills .title::after {
-  content: 'Que faço';
+  content: "Que faço";
   background: #000;
 }
 
@@ -49,7 +49,7 @@
 .skills .skills-content .left .line::before,
 .skills .skills-content .center .line::before,
 .skills .skills-content .right .line::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 80%;
   height: 100%;
@@ -58,40 +58,40 @@
   background: #00804b;
 }
 .skills .skills-content .left .html::before {
-  width: 75%;
+  width: 100%;
 }
 .skills .skills-content .left .css::before {
-  width: 65%;
+  width: 100%;
 }
 .skills .skills-content .left .javascript::before {
-  width: 75%;
+  width: 100%;
 }
 .skills .skills-content .left .react::before {
-  width: 35%;
+  width: 100%;
 }
 .skills .skills-content .center .comunication::before {
-  width: 75%;
+  width: 100%;
 }
 .skills .skills-content .center .creativity::before {
-  width: 65%;
+  width: 100%;
 }
 .skills .skills-content .center .collaboration::before {
-  width: 73%;
+  width: 100%;
 }
 .skills .skills-content .center .empathy::before {
-  width: 85%;
+  width: 100%;
 }
 .skills .skills-content .right .nodejs::before {
-  width: 75%;
+  width: 100%;
 }
 
 .skills .skills-content .right .express::before {
-  width: 53%;
+  width: 100%;
 }
 
 .skills .skills-content .right .mysql::before {
-  width: 53%;
+  width: 100%;
 }
 .skills .skills-content .right .postgres::before {
-  width: 43%;
+  width: 100%;
 }
